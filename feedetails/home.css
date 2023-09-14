@@ -1,0 +1,9 @@
+body {
+    background-color: aliceblue;
+}
+
+#img {
+    width: 500px;
+    padding: 10px;
+    position: static;
+}
