@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Student Details</title>
+    <!-- Add a link to your CSS file here if needed -->
+    <link rel="stylesheet" type="text/css" href="{% static 'your_stylesheet.css' %}">
+    <!-- Add Bootstrap CSS link if you are using it -->
+    <!-- Add Bootstrap CSS link if you are using it -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .table th, .table td {
+            text-align: center;
+        }
+
+        /* Add background colors to table headers */
+        .table thead th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        /* Add a subtle background color to alternate table rows */
+        .table tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        .table th, .table td {
+        text-align: center;
+    }
+
+    /* Add background colors to table headers */
+    .table thead th {
+        background-color: #007BFF;
+        color: #fff;
+    }
+
+    /* Add a subtle background color to alternate table rows */
+    .table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    /* Add background color to the body */
+    body {
+        background-color: #YourBackgroundColor; /* Replace with your color code */
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center"><u>STUDENT DETAILS</u></h1>
+
+        <!-- Search Form -->
+        <h2><u>Data Overview</u></h2>
+        <hr>
+        <form method="get" class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+        <!-- Student Details Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Registered ID</th>
+                    <th>Name</th>
+                    <th>Branch</th>
+                    <th>Category</th>
+                    <th>Total Fee</th>
+                    <th>Building Fee</th>
+                    <th>Paid</th>
+                    <th>Due</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for k in data %}
+                    <tr>
+                        <td>{{ k.S_id }}</td>
+                        <td>{{ k.S_name }}</td>
+                        <td>{{ k.S_branch }}</td>
+                        <td>{{ k.S_category }}</td>
+                        <td>{{ k.S_totalfee }}</td>
+                        <td>{{ k.S_buildingfee }}</td>
+                        <td>{{ k.S_paid }}</td>
+                        <td>{{ k.S_due }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

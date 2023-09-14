@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+    </head>
+    <body><h1><center>Student Details</center></h1>  
+<!-- In the body of the HTML page add this and continue adding all Fields. I have provided three example below --> 
+<h2 class='list'>Data List<hr></h2>
+{% for k in POST1  %}
+    <td><strong>RegisteredID: </strong>{{k.C_id}}</td><br>
+    <td><strong>Name: </strong>{{k.C_name}}</td><br>
+    <hr>  
+{% endfor %}
+    </body>
+</html>

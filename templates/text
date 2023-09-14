@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Student Details</title>
+    </head>
+    <body><h1><center><u>STUDENT DETAILS</u></center></h1></body>  
+
+<!-- In the body of the HTML page add this and continue adding all Fields. I have provided three example below --> 
+{% block classes%}
+<h2><u>Data Overview</u></h2><hr>
+<div class="row">
+    <div class="col-12">
+        <form method="get" class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="Search" name="q"/>
+            <button class="btn btn-outline-success my-2 my-sm-0"type="submit" >Search</button> 
+        </form>
+    </div>
+       {% for k in data %}
+                <td><strong>RegisteredID: </strong>{{k.S_id}}</td><br>
+                <td><strong>Name: </strong>{{k.S_name}}</td><br>
+                <td><strong>Category </strong>{{k.S_category}}</td><br>
+                <td><strong>TotalFee: </strong>{{k.S_totalfee}}</td><br>
+                <td><strong>Paid: </strong>{{k.S_paid}}</td><br> 
+                <td><strong>Due: </strong>{{k.S_due}}</td><br>
+                <br> 
+            {% endfor %}
+</div>
+{% endblock%}
+</html>
