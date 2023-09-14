@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Analysis</title>
+</head>
+<body>
+    <h1>Feedback Analysis</h1>
+
+    <form method="POST">
+        <textarea name="comments" rows="4" cols="50" placeholder="Enter feedbacks (one per line)"></textarea>
+        <br>
+        <input type="submit" value="Analyze">
+    </form>
+
+    <h2>Individual Feedback Analysis:</h2>
+    <ul>
+        {% if individual_results %}
+            {% for result in individual_results %}
+                <li>Feedback: {{ loop.index }} - Analysis: {{ result }}</li>
+            {% endfor %}
+        {% else %}
+            <li>No feedback provided.</li>
+        {% endif %}
+    </ul>
+
+    <h2>Overall Feedback Analysis:</h2>
+    <p>Overall Rating: {{ overall_result }}</p>
+</body>
+</html>
