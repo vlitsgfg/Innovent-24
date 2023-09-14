@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -78,6 +78,14 @@
             justify-content: space-between;
             padding: 10px;
         }
+        main h1{
+            text-align: center;
+            border-bottom: 1px solid blueviolet;
+            margin-bottom: 50px ;
+        }
+        div.container{
+            padding-left: 50px;
+        }
     </style>
 </head>
 <body>
@@ -85,13 +93,11 @@
         <h1>COLLEGE NAME & LOGO</h1>
     </header>
     <main>
-        <div>
-        <table border:none>
-            <tr><td>Year: Enter your year</td></tr>
-            <tr><td>Year: Enter your year</td></tr>
-            <tr><td>Year: Enter your year</td></tr>
-        </table>
-    </div>
+        <div class="container">
+            <h1>upload your files</h1>
+            <input type="file" name="input_file" id="input_file">
+            <input type="button" value="submit">
+        </div>
     </main>
     <footer>
         <p class="left">@all rights reserved</p>
