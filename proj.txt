@@ -1,0 +1,74 @@
+from google.colab import drive
+drive.mount('/content/drive')
+from PIL import Image
+def compress_image(input_path, output_path):
+    try:
+        img = Image.open(input_path)
+        img.save(output_path, "PNG")
+        print("Image compressed successfully!")
+    except Exception as e:
+        print("Error:", e)
+def decompress_image(input_path, output_path):
+    try:
+        img = Image.open(input_path)
+        img.save(output_path, "PNG")
+        print("Image decompressed successfully!")
+    except Exception as e:
+        print("Error:", e)
+if name == "main":
+    input_image = "input_image.png"
+    compressed_image = "compressed_image.png"
+    decompressed_image = "decompressed_image.png"
+
+    # Compress the image
+    compress_image(input_image, compressed_image)
+
+    # Decompress the compressed image
+    decompress_image(compressed_image, decompressed_image)
+from PIL import Image
+import matplotlib.pyplot as plt
+def compress_image(input_path, output_path):
+    try:
+        img = Image.open(input_path)
+        img.save(output_path, "PNG")
+        print("Image compressed successfully!")
+    except Exception as e:
+        print("Error:", e)
+def decompress_image(input_path, output_path):
+    try:
+        img = Image.open(input_path)
+        img.save(output_path, "PNG")
+        print("Image decompressed successfully!")
+    except Exception as e:
+        print("Error:", e)
+if name == "main":
+    input_image = "input_image.png"
+    compressed_image = "compressed_image.png"
+    decompressed_image = "decompressed_image.png"
+
+    # Compress the image
+    compress_image(input_image, compressed_image)
+
+    # Decompress the compressed image
+    decompress_image(compressed_image, decompressed_image)
+
+    # Display the images
+    fig, axes = plt.subplots(1, 3, figsize=(10, 4))
+    
+    input_img = Image.open(input_image)
+    compressed_img = Image.open(compressed_image)
+    decompressed_img = Image.open(decompressed_image)
+    
+    axes[0].imshow(input_img)
+    axes[0].set_title("Original Image")
+    axes[0].axis('off')
+    
+    axes[1].imshow(compressed_img)
+    axes[1].set_title("Compressed Image")
+    axes[1].axis('off')
+    
+    axes[2].imshow(decompressed_img)
+    axes[2].set_title("Decompressed Image")
+    axes[2].axis('off')
+    
+    plt.show()
