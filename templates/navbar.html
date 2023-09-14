@@ -1,0 +1,70 @@
+<div id="navbar">
+	<div>
+		<div><a href="/">Home</a></div>
+		<div id="logo">
+			<a href="/">
+				<img src="{{ url_for("static", filename="logo.png") }}"></img>
+				<span>Attendance System</span>
+			</a>
+		</div>
+	</div>
+	<style>
+		body {
+			margin: 0;
+			font-family: "Roboto", "Arial";
+		}
+
+		body > *:not(#navbar) {
+			margin-left: 10px;
+		}
+
+		#navbar a {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		#navbar a:hover {
+			border-bottom: 2px solid #fff;
+		}
+
+		#navbar {
+			margin-bottom: 10px;
+		}
+
+		#navbar > div {
+			display: flex;
+			flex-direction: row-reverse;
+			height: 60px;
+			background-color: green;
+		}
+
+		#navbar > div > div {
+			display: flex;
+			align-items: center;
+			padding: 10px 20px;
+		}
+
+		#navbar #logo {
+			position: absolute;
+			left: 10px;
+		}
+
+		#navbar #logo a {
+			display: flex;
+			align-items: center;
+		}
+
+		#navbar #logo img {
+			height: 35px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		document.querySelector("#navbar > div").insertAdjacentHTML(
+			"afterbegin",
+			`
+			<
+			`
+		);
+	</script>
+</div>

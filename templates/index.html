@@ -1,18 +1,62 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Scan your barcode here</title>
-	</head>
-	<body>
-		<h2 data-timeout={{ CUTOFF_HOUR }}>Timeout: {{ CUTOFF_HOUR }}</h2>
-		<input id="image-input" type="file" />
-		<button id="submit">Submit</button>
-		<div>
-			Scanned ID:
-			<span id="scanned-id"></span>
-		</div>
-		<script type="text/javascript" src="{{ url_for("static", filename="index.js") }}"></script>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome To Attendance Portal</title>
+        <style type="text/css">
+             body {
+                background-color: rgb(168, 168, 230);
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .button {
+                background-color: white;
+                padding: 50px 50px;
+                border: none;
+                margin: 30px 30px;
+                border-radius: 5px;
+                font-size: 60px;
+                cursor: pointer;
+            }
+
+            .student {
+                color: blue;
+            }
+
+            .teacher {
+                color: blue;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            .heading {
+                font-size: 70px;
+            }
+
+            .login-form {
+                display: none;
+                background-color: white;
+                padding: 20px;
+                border-radius: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p class="heading">Attendance System</p>
+            <a href="/stu">
+                <button class="button student">Student</button>
+            </a>
+            <a href="/emp">
+                <button class="button employee">Employee</button>
+            </a>
+        </div>
+    </body>
 </html>

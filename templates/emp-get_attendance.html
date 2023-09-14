@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Your Attendance
+		</title>
+	</head>
+	<body>
+		{% include "navbar.html" %}
+		<label>
+			Enter employee ID: 
+			<input type="text" id="emp-id" />
+		</label>
+		<button id="submit">Submit</button>
+
+		<br>
+		<div id="attendance">{{ perc }}</div>
+
+		<script type="text/javascript" src="{{ url_for("static", filename="emp-get_attendance.js") }}"></script>
+	</body>
+</html>

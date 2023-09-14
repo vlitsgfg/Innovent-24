@@ -3,7 +3,7 @@ const findAll = (sel, parent = document) => parent.querySelectorAll(sel);
 
 const imageInput = find("#image-input");
 
-if (parseInt(find("h2").dataset.timeout) >= (new Date(Date.now())).getHours()) {
+if ((new Date(Date.now())).getHours() >= parseInt(find("h2").dataset.timeout)) {
 	imageInput.disabled = true;
 	find("#scanned-id").parentElement.style.opacity = 0.5;
 	find("button#submit").disabled = true;
@@ -18,7 +18,7 @@ find("button#submit").addEventListener("click", async () => {
 		const fd = new FormData();
 		fd.set("file", imageInput.files[0]);
 
-		const scannedID = await (await fetch(window.location.href + "submit", {
+		const scannedID = await (await fetch(window.location.origin + "/emp/submit", {
 			method: "POST",
 			body: fd
 		})).text();

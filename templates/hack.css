@@ -1,0 +1,44 @@
+     /* Style for the body, filling the screen with blue color */
+     body {
+        background-color: rgb(168, 168, 230);
+        margin: 0;
+        height: 100vh; /* 100% of the viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Style for the buttons */
+    .button {
+        background-color: white;
+        padding: 50px 50px;
+        border: none;
+        margin: 30px 30px;
+        border-radius: 5px;
+        font-size: 60px;
+        cursor: pointer;
+    }
+
+    /* Style for the student button */
+    .student {
+        color: blue;
+    }
+
+    /* Style for the teacher button */
+    .teacher {
+        color: blue;
+    }
+    .container {
+        text-align: center;
+    }
+    .heading {
+        font-size: 70px;
+    }
+    /* Style for the login form (initially hidden) */
+    .login-form {
+        display: none;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
