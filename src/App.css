@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+
+}
+#btn{
+  margin-top: 10px;
+ margin-bottom: 10px;
+}
+h1{
+  color:black;
+}
+body{
+  background-color: antiquewhite;
+  background-image: url('https://media.istockphoto.com/id/1368935114/photo/vegan-asian-recipes-assorted-brown-rice-curry-masala-poke-do.webp?b=1&s=170667a&w=0&k=20&c=NnzIipbu6JE7wojUJMAk85jaDd7WCCWtg2DSJLFuhBI=');
+  background-image: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Main{
+  background-color: black;
+  
+
+}
+
+
