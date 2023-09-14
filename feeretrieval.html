@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -78,24 +78,41 @@
             justify-content: space-between;
             padding: 10px;
         }
+        form{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>COLLEGE NAME & LOGO</h1>
+        <h1>ENTER YOUR CHOICES HERE</h1>
     </header>
     <main>
         <div>
-        <table border:none>
-            <tr><td>Year: Enter your year</td></tr>
-            <tr><td>Year: Enter your year</td></tr>
-            <tr><td>Year: Enter your year</td></tr>
-        </table>
+        <form>
+        Year:<select name="year" id="year">
+            <option value="I" >I</option>
+            <option value="II" >II</option>
+            <option value="III" >III</option>
+            <option value="IV" >IV</option>
+        </select>&nbsp;
+        Branch:<input type="text" name="branch">&nbsp;
+        Category:<select name="cat" id="cat">&nbsp;
+            <option value="catA" >catA</option>
+            <option value="catA-J" >catA-J</option>
+            <option value="catB" >catB</option>
+        </select>&nbsp;
+        status:<select name="status" id="status">
+            <option value="paid" >paid</option>
+            <option value="not paid" >not paid</option>
+            <option value="all" >all</option>
+        </select>
+        <input type="button" name="submit" value="submit">
+     </form>
     </div>
     </main>
-    <footer>
-        <p class="left">@all rights reserved</p>
-        <p class="right">developed by:</p>
-    </footer>
 </body>
 </html>
