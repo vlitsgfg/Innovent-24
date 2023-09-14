@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurent Page</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+ <div class="navbar-brand">
+              <img src="restaurant-logo_small.png" alt="ISO certification">
+          </div>
+
+</div>
+        <div class="navbar-header">
+          <a class="pull-left visible-md visible-lg">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="home.html"><h1> Feast Fusion </h1></a>
+            <p>
+              <img src="star-k-logo.png" alt="Kosher certification">
+              <span>ISO Certified</span>
+            </p>
+          </div>
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li id="navMenuButton">
+              <a href="menu.html" onclick="$dc.loadMenuCategories();">
+                <img src="menulogo.png"><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#2">
+                <img src="aboutlogo.png"><br class="hidden-xs"> About</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:707-540-8988">
+                <span>410-602-5008</span></a><div>* We Deliver</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+<main>
+     <div class="menu">
+      <center style="padding-bottom: 20px">MENU</center>
+      <div id="rrrrrr">
+      <form action="order.html">
+      <div class="row">
+        <section id="hours" class="col-sm-4" style="border-style: solid; padding-left: 50px; border-radius: 10%; padding-bottom: 5px;">
+          <table style="width: 90%;">
+            <caption style="text-align:center; color:#fff">VEG</caption>
+            <tr>
+              <th>Item Name</th>
+              <th>Price</th>
+              <th>count</th>
+            </tr>
+            <tr>
+              <td id="I1">Paneer Biryani</td>
+              <td id="p1">229/-</td>
+              <td style="justify-content:right;"><input type="number" id="val1" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Mushroom Biryani</td>
+              <td>239/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Vegetable Biryani</td>
+              <td>169/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Palak Paneer Curry</td>
+              <td>140/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Mushroom Curry</td>
+              <td>199/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Panner Buttermasala</td>
+              <td>119/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Veg kadai</td>
+              <td>120/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Dal Fry</td>
+              <td>199/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>roti</td>
+              <td>15/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Butternaan</td>
+              <td>30/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>mini Family Pack</td>
+              <td>399/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Full Family Pack</td>
+              <td>999/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+          </table>
+
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4" style="border-style: solid; border-left-style: hidden; padding-left: 50px; border-radius: 10%; padding-bottom: 5px;">
+          <table style="width: 90%;">
+            <caption  style="text-align:center; color:#fff">NON-VEG</caption>
+            <tr>
+              <th>Item Name</th>
+              <th>Price</th>
+              <th>Count</th>
+            </tr>
+            <tr>
+              <td>Chicken LollyPop (6 Pcs)</td>
+              <td>179/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Chicken 65</td>
+              <td>140/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Chilly Chicken</td>
+              <td>200/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Chicken Biryani</td>
+              <td>199/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Fish Biryani</td>
+              <td>239/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Mutton Biryani</td>
+              <td>309/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Butter Chicken Boneless</td>
+              <td>249/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Kadai Chicken</td>
+              <td>200/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Chicken fry</td>
+              <td>160/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Chicken wings</td>
+              <td>149/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>mini Family Pack</td>
+              <td>499/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+            <tr>
+              <td>Full Family Pack</td>
+              <td>999/-</td>
+              <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+            </tr>
+          </table>
+
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4" style="border-style: solid; border-left-style: hidden; padding-left: 50px; border-radius: 10%; padding-bottom: 5px;">
+          <table style="width: 90%;">
+            <caption  style="text-align:center; color:#fff">DESSERT</caption>
+          <tr>
+             <th>Item Name</th>
+             <th>Price</th>
+              <th>Count</th>
+          </tr>
+          <tr>
+            <td>Candies</td>
+            <td>10/-</td>
+            <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+         </tr>
+         <tr>
+          <td>Cookies</td>
+          <td>30/-</td>
+          <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+       </tr>
+         <tr>
+             <td>Caremelon Ice Cream</td>
+             <td>40/-</td>
+             <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+          </tr>
+          <tr>
+            <td>Brownie</td>
+            <td>70/-</td>
+            <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+         </tr>
+        <tr>
+           <td>Oreo Milk Shake</td>
+           <td>99/-</td>
+           <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+        </tr>
+        <tr>
+          <td>Black Current</td>
+          <td>49/-</td>
+          <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+       </tr>
+       <tr>
+        <td>Fruits</td>
+        <td>30/-</td>
+       <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+     </tr>
+       <tr>
+        <td>Pastries</td>
+        <td>69/-</td>
+        <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+       </tr>
+   <tr>
+    <td>Deep fried</td>
+    <td>49/-</td>
+    <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+ </tr>
+ <tr>
+  <td>Spanish Delight</td>
+  <td>69/-</td>
+  <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+        </tr>
+        <tr>
+          <td>Donuts</td>
+          <td>25/-</td>
+          <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+       </tr>
+       <tr>
+        <td>Cupcakes</td>
+        <td>35/-</td>
+        <td style="justify-content:right;"><input type="number" id="val" value="0" style="padding-left: 10%; background: transparent; width: 50%;"></td>
+       </tr>
+        </table>
+        </section>
+      </div>
+      <div>
+      <center style="padding-top: 20px;">
+        <input type="submit" value="Get Order" id="get" style="color:black">
+      </center>
+    </div>
+    </form>
+    </div>
+     </div>
+</main>
+
+<footer class="panel-footer">
+  <div id="2" class="container">
+    <div class="row">
+      <section id="hours" class="col-sm-4">
+        <span>Hours:</span><br>
+        Sun-Thurs: 11:15am - 10:00pm<br>
+        Fri-Sat: 11:15am - 4:30pm<br>
+        <hr class="visible-xs">
+      </section>
+      <section id="address" class="col-sm-4">
+        <span>Address:</span><br>
+        7105 MG Road<br>
+        Baltimore, Vij 522778
+        <p>* Delivery area within 3-4 miles, with minimum order of Rs.1000 plus Rs.30 charge for all deliveries.</p>
+        <hr class="visible-xs">
+      </section>
+      <section id="testimonials" class="col-sm-4">
+        <p>"The best restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+        <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+      </section>
+    </div>
+    <div class="text-center">&copy; Copyright Feast Fusion Restaurant 2016</div>
+  </div>
+</footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
