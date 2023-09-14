@@ -1,0 +1,130 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+.row1{
+    border:solid 1px white;
+      height:470px;
+      font-size:0px;
+      display: flex;
+      background-color: antiquewhite;
+  }
+  .row2{
+    border:solid 1px white;
+      height:150px;
+      font-size:0px;
+      display: flex;
+      padding-top:20px ;
+      padding-left: 200px;
+    
+      text-align: center;
+  }
+  .row2 h1{
+    padding-top: 40px;
+  }
+  .body{
+    background-color:white;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+  }
+  .container{
+    max-width: 1160px;
+    margin: 0 auto;
+   
+  }
+  .flex-box{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-list{
+    display: flex;
+    padding: 20px;
+    width: 33.33%;
+    
+  }
+  .box{
+    background:darkorange;
+    border-radius: 15px;
+    display: flex;
+    flex-direction:column;
+    box-shadow:0px 0px 7px 0px #fbda43;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+  }
+  .box img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    clip-path: polygon(0 0,100% 0,100% 87%,0% 100%);
+  }
+  .box h2{
+    font-size: 24px;
+    line-height: 46px;
+    color:black;
+    font-weight: 500;
+  text-align: center;
+    margin-bottom: 20px;
+  }
+  .box p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    
+  }
+  .box a{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 32px;
+    color:white;
+    letter-spacing: 1px;
+    width: 111px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: black;
+       
+    transition: background.4s ease-in;
+  }
+  .box a:hover{
+    background-color: #fbda43;
+    color: #000;
+    border: 2px solid #fbda43;
+  }
+  
+  .row3{
+  
+    border:solid 1px white;
+    height:600px;
+    font-size:0px;
+    display: flex;
+    position: relative;
+  }
+  .text{
+          
+    height:600px;
+    width:1500px;
+    background: url(https://elearningindustry.com/wp-content/uploads/2022/08/Shutterstock_2095487767.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size:18px;
+    
+    padding-left: 850px;
+  }
+ 

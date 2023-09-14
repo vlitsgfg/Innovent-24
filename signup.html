@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="css/login.css">
+        <script>    
+            function validation()
+            {   var fname=document.loginform.fname.value;
+                var lname=document.loginform.lname.value;
+                var mobile=document.loginform.mobile.value;
+                var email=document.loginform.email.value;
+                var password=document.loginform.password.value;
+                var cpassword=document.loginform.cpassword.value;
+                if(fname==null || fname=="")
+                {
+                alert("FIRSTNAME CAN'T BE BLANK :(");
+                    return false;
+                }
+                else if(lname==null || lname=="")
+                {
+                alert("LASTNAME CAN'T BE BLANK :(");
+                    return false;
+                }
+                else if(mobile.length!=10)
+                {
+                alert("Inavalid Mobile Number :(");
+                    return false;
+                }
+                else if(email==null || email=="")
+                {
+                alert("Inavalid Email, Email Should Contain @ :(");
+                    return false;
+                }
+                else if(password.length<6)
+                {
+                alert("PASSWORD GREATER THAN SIX DIGITS");
+                    return false;  
+                }
+                else if(cpassword!=password){
+                    alert("Confirm Password Must Be Same As The Password.")
+                    return false;
+                }
+
+            }
+        </script>
+        <style type="text/css">
+            .form-container{
+                position: absolute;
+                top: 30rem;
+                width: 700px;
+            }
+            form{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                column-gap: 30px;
+                grid-row-gap: 15px;
+            }
+
+        </style>
+         <link
+         href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        </head>
+
+    <body>
+        <section>
+            <div class="logo">
+                <h1 style="position:absolute ;top:15%;left:58%;transform: translate(-70%,-75%);font-family: 'Paytone One' , sans-serif;font-size: 60px;letter-spacing: 1px;">TRAVEL WONDERS</h1>
+            </div>
+            <div class="form-container">
+                <h1>Sign Up Form</h1>
+                <form action="signup.php" method="post">
+                <form name="loginform" action="home.html" onsubmit="return validation()">
+                    <div class="control">
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" class="name">
+                    </div>
+                    <div class="control">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" class="name">
+                    </div>
+                    <div class="control">
+                        <label for="mobile">Mobile No:</label>
+                        <input type="text" name="mobile" class="name">
+                    </div>
+                    <div class="control">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" class="name">
+                    </div>
+                    <div class="control">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" class="password">
+                    </div>
+                    <div class="control">
+                        <label for="cpassword">Confirm Password:</label>
+                        <input type="password" name="cpassword" class="password">
+                    </div>
+                    <div class="control">
+                        <input type="submit" name="submit" value="Sign Up" >
+                    </div>
+                </form>
+             </form>
+            </div>
+        </section>
+    </body>
+
+</html>
