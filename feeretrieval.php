@@ -82,19 +82,16 @@
 </head>
 <body>
     <header>
-        <h1>VIGNAN'S LARA INSTITUTE OF TECHNOLOGY AND SCIENCE</h1>
+        <h1>COLLEGE NAME & LOGO</h1>
     </header>
     <main>
         <h1 id="mainheading">
             Student fee details
         </h1>
         <div id="studentDetails">
-            <h1>
-             <?php  
-             session_start(); 
-              echo $_SESSION['username'] ;
-            ?>
-            </h1>
+            <h3> NAME:    <i>someone</i> </h3>
+            <h3>REDG NO: <i>22fe1212</i></h3>
+            <h3>YEAR: <i>2023</i></h3>
         </div>
         <div class="table">
         <table>
@@ -103,50 +100,19 @@
                 <th>year paid</th>
                 <th>date</th>
                 <th>time</th>
-                <th>Amount</th>
-                <th>Studying year</th>
             </tr>
-            <?php
-                //echo $_SESSION['username'];
-                $db=mysqli_connect("localhost","root","","fee");
-                $a = $_SESSION['username'];
-                $que="SELECT * FROM daily_fees where Regno='$a'";
-                $q=mysqli_query($db,$que);
-                $r=mysqli_num_rows($q);
-                $sum=0;
-                $fyear=0;
-                $syear=0;
-                $tyear=0;
-                $fiyear=0;
-                while($r = mysqli_fetch_array($q)){
-                ?>
-                    <tr><td><?php echo $r['description']?></td><td> <?php echo $r['Pyear']?> </td> <td><?php echo $r['date']?> </td><td> <?php echo $r['time'] ?> </td><td> <?php echo $r['Amount'] ?> </td><td> <?php echo $r['Year'] ?> </td></tr>
-                <?php
-                    $sum+=$r['Amount'];
-                    if($r['Pyear']==1){
-                        $fyear+=$r['Amount'];
-                    }
-                    if($r['Pyear']==2){
-                        $syear+=$r['Amount'];
-                    }
-                    if($r['Pyear']==3){
-                        $tyear+=$r['Amount'];
-                    }
-                    if($r['Pyear']==4){
-                        $fiyear+=$r['Amount'];
-                    }
-               // }
-            }
-            ?>
+            <tr>
+                <td>clg fee</td>
+                <td> 2</td>
+                <td>12/12/22</td>
+                <td>12:12</td>
+            </tr>
         </table>
         </div>
-        <?php
-        echo "Total fee paid:".$sum."<br> <br>";
-        echo "First year fee paid:".$fyear ."<br> <br>";
-        echo "Second year fee paid:".$syear ."<br> <br>";
-        echo "Third year fee paid:".$tyear."<br> <br>";
-        echo "Fourth year fee paid:".$fiyear;
-        ?>
     </main>
+    <footer>
+        <p class="left">@all rights reserved</p>
+        <p class="right">developed by:</p>
+    </footer>
 </body>
 </html>
